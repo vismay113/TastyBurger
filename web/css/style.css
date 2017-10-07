@@ -1,0 +1,122 @@
+.tastyburger-footer{
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: #202020;
+    color: white;
+}
+
+
+.tastyburger-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.tastyburger-content .sc-item-img{
+    
+   margin-bottom: 20px; 
+}
+.tastyburger-slider{
+    background: #E4E4E4;
+    padding-top: 30px;
+   
+    margin-top: -20px;
+     margin-bottom: -20px;
+}
+
+.tastybuger-navbar {
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: white;
+}
+
+.navbar-nav>.active>a {
+    background: #3498db;
+    color: white;
+}
+
+.tastyburger-cart {
+
+    padding-left: 5px;
+    border-left: 1px;
+}
+
+.tastyburger-form-btn {
+    margin-right: 5px;
+}
+
+
+.tastyburger-navbar .tastyburger-btn-cart {
+    background: #3498db;
+    color: white;
+    border-radius: 3px;
+}
+
+.centered {
+    
+    margin: auto;
+    padding: auto;
+    
+}
+
+.dropdown-menu{
+    
+    min-width: 18em;
+    
+   
+}
+
+.register-btn{
+    
+   margin: -1em;
+
+    
+}
+
+
+.logo-small {
+    
+    width: 10em;
+    height:7em;
+    margin-top: -2em;
+}
+
+
+
+.login-menu{
+    
+    background-color: white;
+    padding: 1em 1em 1em 1em;
+    margin: 0em;
+}
+
+.thumbnail-height{
+    
+    height: 5em;
+}
+
+.social-icon {
+    
+    float: right;
+}
+
+
+ #map {
+        height: 30em;
+        width: 100%;
+       display:inline-block;
+       }
+
+    ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {color: #337ab7 ;}

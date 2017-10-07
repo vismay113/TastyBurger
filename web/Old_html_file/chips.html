@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <link rel="icon" href="/TastyBurger/img/hamburger.ico">
+        <title>Tasty Burger</title>
+
+        <!-- Bootstrap -->
+        <link href="/TastyBurger/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Optional theme -->
+        <link href="/TastyBurger/css/bootstrap-theme.min.css" rel="stylesheet">
+
+        <!-- Font-awesome -->
+        <link rel="stylesheet" href="/TastyBurger/font-awesome/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="/TastyBurger/css/style.css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/TastyBurger/js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/TastyBurger/js/bootstrap.min.js"></script>
+
+        <script src="/TastyBurger/js/main.js"></script> <!-- customised JavaScript -->
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse">
+
+                <div class="container">
+                    <div class="navbar-header ">
+                        <a class="navbar-brand" href="/TastyBurger/index.html"> <img class="logo-small" src="/TastyBurger/img/logo.png" alt="logo"></a>
+
+
+                        <button type="button" 
+                                data-toggle="collapse" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-left text-center"> 
+
+                            <li><a href="/TastyBurger/index.html" class="text-center">Home</a></li>
+                            <li><a href="/TastyBurger/aboutus.html" class="text-center">About Us</a></li>
+                            <li><a href="/TastyBurger/contactus.html" class="text-center">Contact Us</a></li>
+
+
+                          <li class="dropdown">
+                                <a class="dropdown-toggle text-center" data-toggle="dropdown" href="#">Menu
+                                    <span class="caret"></span></a>
+                                     <span class="sr-only">Toggle Dropdown</span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/TastyBurger/beefburger.html" class="text-center">Beef Burger</a></li>
+                                    <li><a href="/TastyBurger/chickenburger.html" class="text-center">Chicken Burger</a></li>
+                                    <li><a href="/TastyBurger/fishburger.html" class="text-center">Fish Burger</a></li>
+                                    <li><a href="/TastyBurger/vegetarian.html" class="text-center">Vegetarian</a></li>
+                                    <li><a href="/TastyBurger/drink.html" class="text-center">Drink</a></li>
+                                    <li><a href="/TastyBurger/chips.html" class="text-center">Chips</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="/TastyBurger/shoppingcart.html" class="text-center">Shopping Cart</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right text-center">
+
+                            <li><a href="/TastyBurger/shoppingcart.html" class="text-center"><span class="  glyphicon glyphicon-shopping-cart"></span> Shopping Cart<span class="badge">3</span></a></li>
+
+
+
+
+
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown">Log In <span class="caret"></span></a>
+                                <ul class="dropdown-menu dropdown-lr animated slideInRight" role="menu">
+                                    <li class="col-lg-14 login-menu">
+                                        <div class="text-center"><h3><b>Log In</b></h3></div>
+
+                                        <form id="ajax-login-form" action="#" method="post" role="form" autocomplete="off">
+                                            <div class="form-group">
+                                                <label for="inputEmail">Email address</label>
+                                                <input type="email" name="inputEmail" class="form-control" tabindex="1" id="inputEmail" placeholder="Email" value="" autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword">Password</label>
+                                                <input type="password" name="inputPassword" class="form-control" tabindex="2" id="inputPassword" placeholder="Password" autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <input type="checkbox" tabindex="3" name="remember" id="remember">
+                                                        <label for="remember" class="rememberme"> Remember Me</label>
+                                                    </div>
+                                                    <div class="col-xs-5 pull-right">
+                                                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="text-center">
+                                                            <a href="http://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" class="hide" name="token" id="token" value="a465a2791ae0bae853cf4bf485dbe1b6">
+
+                                            
+
+                                        </form>
+
+
+                                    </li>
+                                </ul>
+                            </li>
+    
+                        <li>
+                  
+                   <a href="/TastyBurger/register.html"><button type="button" class="btn btn-success btn-md register-btn">Register</button></a>
+                      </li>
+                        </ul>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+
+
+
+
+        <div class="tastyburger-content">
+
+            <div class="container">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">Chips </div>
+                    <div class="panel-body"> 
+                        <div class="row text-center">
+
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="/TastyBurger/img/chips/chipslarge.jpg" alt="chipslarge">
+                                    <div class="caption">
+                                        <h3>Chips Small</h3>
+                                         <h4>$1.00</h4>
+                                         
+                                        <p>Chips, Cajun Salt </p>
+                                       
+                                        
+                                        <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="/TastyBurger/img/chips/chipslarge.jpg" alt="chipslarge">
+                                    <div class="caption">
+                                        <h3>Chips Medium</h3>
+                                        <h4>$1.50</h4>
+                                        <p>Chips, Cajun Salt</p>
+                                        <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="/TastyBurger/img/chips/chipslarge.jpg" alt="chipslarge">
+                                    <div class="caption">
+                                        <h3>Chips Large</h3>
+                                           <h4>$2.00</h4>
+                                        <p>Chips, Cajun Salt</p>
+                                      
+                                        <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div> <!-- panel body-->
+
+                </div> <!-- panel -->
+            </div> <!-- container -->
+
+        </div> <!-- tasty burger-content -->
+
+        <footer>
+            <div class="tastyburger-footer">
+                <div class="container">
+                    <div class="col-md-12">
+                        <p class="text-center"> &copy Copyright CQ University Software Development Project Team 2017</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </body>
+</html>

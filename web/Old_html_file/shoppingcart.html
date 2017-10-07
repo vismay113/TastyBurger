@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <link rel="icon" href="img/hamburger.ico">
+        <title>Tasty Burger</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Optional theme -->
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+        <!-- Font-awesome -->
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script> <!-- customised JavaScript -->
+
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse">
+
+            <div class="container">
+                <div class="navbar-header ">
+                    <a class="navbar-brand" href="index.html"> <img class="logo-small" src="img/logo.png" alt="logo"></a>
+
+
+                    <button type="button" 
+                            data-toggle="collapse" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <header>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-left text-center"> 
+
+                            <li><a href="index.html" class="text-center">Home</a></li>
+                            <li><a href="aboutus.html" class="text-center">About Us</a></li>
+                            <li><a href="contactus.html" class="text-center">Contact Us</a></li>
+
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle text-center" data-toggle="dropdown" href="#">Menu
+                                    <span class="caret"></span></a>
+                                <span class="sr-only">Toggle Dropdown</span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/TastyBurger/beefburger.html" class="text-center">Beef Burger</a></li>
+                                    <li><a href="/TastyBurger/chickenburger.html" class="text-center">Chicken Burger</a></li>
+                                    <li><a href="/TastyBurger/fishburger.html" class="text-center">Fish Burger</a></li>
+                                    <li><a href="/TastyBurger/vegetarian.html" class="text-center">Vegetarian</a></li>
+                                    <li><a href="/TastyBurger/drink.html" class="text-center">Drink</a></li>
+                                    <li><a href="/TastyBurger/chips.html" class="text-center">Chips</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="/TastyBurger/shoppingcart.html" class="text-center">Shopping Cart</a></li>
+                                        <li><a href="/TastyBurger/orderhistory.html" class="text-center">Order History</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right text-center">
+<li><a href="/TastyBurger/profile.html" class="text-center">Profile</a></li>
+                            <li><a href="/TastyBurger/shoppingcart.html" class="text-center"><span class="  glyphicon glyphicon-shopping-cart"></span> Shopping Cart<span class="badge">3</span></a></li>
+
+
+                            <li class="dropdown">
+                                <a href="/TastyBurger/index.html" class="dropdown-toggle text-center" >Log Out <span class="glyphicon glyphicon-log-out"></span></a>
+
+                            </li>
+
+
+                        </ul>
+
+
+
+                    </div>
+                </header>
+            </div>
+        </nav>
+
+
+
+        <div class="container" style="padding: 2em;">
+
+
+            <div style="padding-bottom: 2em;">
+
+                <ul class="nav nav-tabs nav-justified" >
+                    <li><a href="#" style="color:black; text-decoration: underline;">Clear Shopping Cart</a></li>
+                    <li><a href="/TastyBurger/index.html" style="color:black; text-decoration: underline;">Continue shopping</a></li>
+                    <li><a href="/TastyBurger/checkout.html" style="color:black; text-decoration: underline;">Proceed to checkout <span class="glyphicon glyphicon-circle-arrow-right"></span></a></li>
+
+                </ul>
+            </div>
+
+             <div class="panel panel-default">
+                    <div class="panel-heading text-center">Shopping Cart </div>
+                    <div class="panel-body"> 
+          
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Item name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+
+                            <img src="/TastyBurger/img/beef/burgerman.jpg" alt="burgerman" style="width:6em; height:5em">
+                        </td>
+                        <td>Burger Man</td>
+                        <td>$5.00</td>
+                        <td>
+                            <form class="navbar-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="1" name="quantity" style="text-align:right;">
+                                </div>
+                                <button type="submit" name="submit" class="btn btn-default">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/TastyBurger/img/chicken/chickendouble.jpg" alt="chickendouble" style="width:6em; height:5em">
+                        </td>
+                        <td>Chicken Double</td>
+                        <td>$4.50</td>
+                        <td> 
+
+                            <form class="navbar-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="1" name="quantity" style="text-align:right;">
+                                </div>
+                                <button type="submit" name="submit" class="btn btn-default">Update</button>
+                            </form>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <img src="/TastyBurger/img/drink/coke.jpg" alt="coke" style="width:6em; height:5em">
+                        </td>
+                        <td>Coke</td>
+                        <td>$2.00</td>
+                        <td> 
+
+                            <form class="navbar-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="1" name="quantity" style="text-align:right;">
+                                </div>
+                                <button type="submit" name="submit" class="btn btn-default">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr style="font-weight: bold;">
+                        <td></td>
+                        <td>Total</td>
+                        <td>$11.50</td>
+                        <td style="padding-left: 12.5em;">3</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+             </div>
+            </div>
+          
+
+
+        <footer style="margin-top:-4em;">
+            <div class="tastyburger-footer">
+                <div class="container">
+                    <div class="col-md-12">
+                        <p class="text-center"> &copy Copyright CQ University Software Development Project Team 2017</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <link rel="icon" href="img/hamburger.ico">
+        <title>Tasty Burger</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Optional theme -->
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+        <!-- Font-awesome -->
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script> <!-- customised JavaScript -->
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+        
+        <script>
+        paypal.Button.render({
+
+            env: 'production', // Or 'sandbox',
+
+            commit: true, // Show a 'Pay Now' button
+
+            payment: function() {
+                // Set up the payment here
+            },
+
+            onAuthorize: function(data, actions) {
+                // Execute the payment here
+           }
+
+        }, '#paypal-button');
+    </script>
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse">
+
+            <div class="container">
+                <div class="navbar-header ">
+                    <a class="navbar-brand" href="index.html"> <img class="logo-small" src="img/logo.png" alt="logo"></a>
+
+
+                    <button type="button" 
+                            data-toggle="collapse" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <header>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-left text-center"> 
+
+                            <li><a href="index.html" class="text-center">Home</a></li>
+                            <li><a href="aboutus.html" class="text-center">About Us</a></li>
+                            <li><a href="contactus.html" class="text-center">Contact Us</a></li>
+
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle text-center" data-toggle="dropdown" href="#">Menu
+                                    <span class="caret"></span></a>
+                                <span class="sr-only">Toggle Dropdown</span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/TastyBurger/beefburger.html" class="text-center">Beef Burger</a></li>
+                                    <li><a href="/TastyBurger/chickenburger.html" class="text-center">Chicken Burger</a></li>
+                                    <li><a href="/TastyBurger/fishburger.html" class="text-center">Fish Burger</a></li>
+                                    <li><a href="/TastyBurger/vegetarian.html" class="text-center">Vegetarian</a></li>
+                                    <li><a href="/TastyBurger/drink.html" class="text-center">Drink</a></li>
+                                    <li><a href="/TastyBurger/chips.html" class="text-center">Chips</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="/TastyBurger/shoppingcart.html" class="text-center">Shopping Cart</a></li>
+                                        <li><a href="/TastyBurger/orderhistory.html" class="text-center">Order History</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right text-center">
+<li><a href="/TastyBurger/profile.html" class="text-center">Profile</a></li>
+                            <li><a href="/TastyBurger/shoppingcart.html" class="text-center"><span class="  glyphicon glyphicon-shopping-cart"></span> Shopping Cart<span class="badge">3</span></a></li>
+
+
+
+
+
+
+                            <li class="dropdown">
+                                <a href="/TastyBurger/index.html" class="dropdown-toggle text-center" >Log Out <span class="glyphicon glyphicon-log-out"></span></a>
+                              
+                            </li>
+
+                          
+                        </ul>
+
+
+
+                    </div>
+                </header>
+            </div>
+        </nav>
+
+
+
+   <div class="container" style="padding: 2em;">
+      
+ 
+ 
+       
+       
+       
+       <h3> Checkout </h3>
+                        <p> In order to purchase the items in your shopping cart, please confirm or update the following information:</p> 
+      <div class="container">
+              
+
+
+
+                <div class="col-md-6">
+                  
+
+          
+                    <form style="padding-right: 2em;">
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="contactInputFirstName" placeholder="First Name">
+                        </div>
+                        
+                         <div class="form-group">
+
+                            <input type="text" class="form-control" id="contactInputLastName" placeholder="Last Name">
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" id="contactInputEmail1" placeholder="Email">
+                        </div>
+                        
+                         <div class="form-group">
+
+                            <input type="tel" class="form-control" id="contactInputPhone" placeholder="Phone">
+                        </div>
+                        
+                              <div class="form-group">
+
+                            <input type="text" class="form-control" id="contactAddress" placeholder="Address">
+                        </div>
+                        
+                        
+                        <div>
+
+                            <textarea class="form-control" rows="2" placeholder="Other message (maximum 100 words)" maxlength="100"></textarea>
+
+                        </div>
+                        <br>
+                        <div class="text-center" >
+            
+                           <!-- <a href="https://www.paypal.com/cgi-bin/webscr"><button type="button" class="btn btn-primary btn-md register-btn">Purchase with Paypal</button></a> -->
+                        </div>
+                    </form>
+
+
+                </div>
+
+                <div class="col-md-6" >
+                    <p> Delivery within 3 hours (for local area)</p>
+                    <p> $3.00 delivery charge is applied to all purchase orders </p>
+                    <p> For direct pick-up at the local store, the delivery change is $0.00 </P>
+                    
+                   <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th></th>
+
+      </tr>
+    </thead>
+    <tbody>
+  
+      <tr>
+        <td>Subtotal</td>
+        <td>$11.50</td>
+   
+      </tr>
+      <tr>
+        <td>Delivery charge</td>
+        <td>$3</td>
+      
+      </tr>
+           <tr>
+        <td style="font-weight: bold;">Total</td>
+        <td style="font-weight: bold;">$14.50</td>
+      
+      </tr>
+    </tbody>
+  </table>
+                    
+                 <div id="paypal-button"></div>
+                </div>
+
+            </div>
+</div>
+
+   
+        
+
+        <footer style="margin-top:-4em;">
+            <div class="tastyburger-footer">
+                <div class="container">
+                    <div class="col-md-12">
+                        <p class="text-center"> &copy Copyright CQ University Software Development Project Team 2017</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </body>
+</html>

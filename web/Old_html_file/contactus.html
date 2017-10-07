@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <link rel="icon" href="img/hamburger.ico">
+        <title>Tasty Burger</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Optional theme -->
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+        <!-- Font-awesome -->
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script> <!-- customised JavaScript -->
+
+
+        <!--Google API Key ID: AIzaSyA5jg7nHdrvuPAhVWjfbWaERGC3fNEPBuE -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5jg7nHdrvuPAhVWjfbWaERGC3fNEPBuE&callback=initMap">
+        </script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse">
+
+            <div class="container">
+                <div class="navbar-header ">
+                    <a class="navbar-brand" href="index.html"> <img class="logo-small" src="img/logo.png" alt="logo"></a>
+
+
+                    <button type="button" 
+                            data-toggle="collapse" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <header>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-left text-center"> 
+
+                            <li><a href="index.html" class="text-center">Home</a></li>
+                            <li><a href="aboutus.html" class="text-center">About Us</a></li>
+                            <li><a href="contactus.html" class="text-center">Contact Us</a></li>
+
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle text-center" data-toggle="dropdown" href="#">Menu
+                                    <span class="caret"></span></a>
+                                <span class="sr-only">Toggle Dropdown</span>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/TastyBurger/beefburger.html" class="text-center">Beef Burger</a></li>
+                                    <li><a href="/TastyBurger/chickenburger.html" class="text-center">Chicken Burger</a></li>
+                                    <li><a href="/TastyBurger/fishburger.html" class="text-center">Fish Burger</a></li>
+                                    <li><a href="/TastyBurger/vegetarian.html" class="text-center">Vegetarian</a></li>
+                                    <li><a href="/TastyBurger/drink.html" class="text-center">Drink</a></li>
+                                    <li><a href="/TastyBurger/chips.html" class="text-center">Chips</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="/TastyBurger/shoppingcart.html" class="text-center">Shopping Cart</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right text-center">
+
+                            <li><a href="/TastyBurger/shoppingcart.html" class="text-center"><span class="  glyphicon glyphicon-shopping-cart"></span> Shopping Cart<span class="badge">3</span></a></li>
+
+
+
+
+
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle text-center" data-toggle="dropdown">Log In <span class="caret"></span></a>
+                                <ul class="dropdown-menu dropdown-lr animated slideInRight" role="menu">
+                                    <li class="col-lg-14 login-menu">
+                                        <div class="text-center"><h3><b>Log In</b></h3></div>
+
+                                        <form id="ajax-login-form" action="#" method="post" role="form" autocomplete="off">
+                                            <div class="form-group">
+                                                <label for="inputEmail">Email address</label>
+                                                <input type="email" name="inputEmail" class="form-control" tabindex="1" id="inputEmail" placeholder="Email" value="" autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword">Password</label>
+                                                <input type="password" name="inputPassword" class="form-control" tabindex="2" id="inputPassword" placeholder="Password" autocomplete="off">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <input type="checkbox" tabindex="3" name="remember" id="remember">
+                                                        <label for="remember" class="rememberme"> Remember Me</label>
+                                                    </div>
+                                                    <div class="col-xs-5 pull-right">
+                                                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="text-center">
+                                                            <a href="http://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" class="hide" name="token" id="token" value="a465a2791ae0bae853cf4bf485dbe1b6">
+
+
+
+                                        </form>
+
+
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+
+                                <a href="/TastyBurger/register.html"><button type="button" class="btn btn-success btn-md register-btn">Register</button></a>
+                            </li>
+
+                        </ul>
+
+
+
+                    </div>
+                </header>
+            </div>
+        </nav>
+
+
+
+        <div class="jumbotron tastyburger-slider">
+            <div class="container">
+                <h2>Contact us</h2>
+
+
+
+                <div class="col-md-6">
+                    <p class="glyphicon glyphicon-envelope"><span> </span>info@tastyburger1.com.au</p>
+                    <br>
+                    <p class="glyphicon glyphicon-earphone"><span> </span>(07) 3312-1234</p>
+
+                    <br><br>
+
+                    <p> Or fill in the form below </p>
+                    <form style="border-style: ridge; padding: 1em;">
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="contactInputName" placeholder="Name">
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" id="contactInputEmail1" placeholder="Email">
+                        </div>
+                        <div>
+
+                            <textarea class="form-control" rows="5" placeholder="Message (maximum 500 words)" maxlength="500"></textarea>
+
+                        </div>
+                        <br>
+                        <div class="text-center" >
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </form>
+
+
+                </div>
+
+                <div class="col-md-6" >
+                    <h3> Location </h3>
+                    <p>160 Ann Street, Brisbane QLD 4000, Australia </p>
+                    <div id="map"></div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <footer style="margin-top:-4em;">
+            <div class="tastyburger-footer">
+                <div class="container">
+                    <div class="col-md-12">
+                        <p class="text-center"> &copy Copyright CQ University Software Development Project Team 2017</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+    </body>
+</html>
